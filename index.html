@@ -6,6 +6,34 @@
     <title>index</title>
 </head>
 <body>
-    
+    <header class="title__container">
+        <h1 class="title">NoteKeeper</h1>
+    </header>
+    <main class="main__container">
+    <section class="form__container card__container">
+        <h2>New Note Form</h2>
+        <form>
+            <label>
+                Name
+                <input type="text" id="title" name="title" required/>
+            </label>
+            <label>
+                Email
+                <input type="text" id="content" name="content" required/>
+            </label>
+            <label>
+                Priority
+                <select name="priority" id="priority">
+                    <option value="select" disabled selected>Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="hight">Hight</option>
+                </select>
+            </label>
+        </form>
+    </section>
+    <section class="collectNotes">
+        <h2>Notes List</h2>
+    </section>
 </body>
 </html>
