@@ -15,22 +15,22 @@
         <form>
             <label>
                 Name
-                <input type="text" id="title" name="title" required/>
+                <input type="text" id="title" name="title" required aria-describedby="This is the name"/>
             </label>
             <label>
                 Email
-                <input type="text" id="content" name="content" required/>
+                <input type="text" id="content" name="content" required aria-describedby="This is the email"/>
             </label>
             <label>
                 Priority
-                <select name="priority" id="priority">
+                <select name="priority" id="priority" aria-describedby="This is the priority">
                     <option value="select" disabled selected>Select Priority</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="hight">Hight</option>
                 </select>
             </label>
-            <button type="submit">Add Note</button>
+            <button type="submit" aria-describedby="This is the button submit">Add Note</button>
         </form>
     </section>
     <section class="collectNotes">
