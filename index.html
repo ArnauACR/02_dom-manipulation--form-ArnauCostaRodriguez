@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header class="title__container">
@@ -12,13 +13,13 @@
     <main class="main__container">
     <section class="form__container card__container">
         <h2>New Note Form</h2>
-        <form>
+        <form method="post" action="">
             <label>
-                Name
+                Title
                 <input type="text" id="title" name="title" required aria-describedby="This is the name"/>
             </label>
             <label>
-                Email
+                Content
                 <input type="text" id="content" name="content" required aria-describedby="This is the email"/>
             </label>
             <label>
@@ -27,10 +28,10 @@
                     <option value="select" disabled selected>Select Priority</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
-                    <option value="hight">Hight</option>
+                    <option value="high">High</option>
                 </select>
             </label>
-            <button type="submit" aria-describedby="This is the button submit">Add Note</button>
+            <button type="submit" id="button-submit" aria-describedby="This is the button submit">Add Note</button>
         </form>
     </section>
     <section class="collectNotes">
