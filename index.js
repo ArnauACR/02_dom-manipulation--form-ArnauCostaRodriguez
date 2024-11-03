@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const form = document.querySelector('form');
 const displaySection = document.querySelector('.collectNotes');
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
     
     const formData = new FormData(form);
     const sanitizedData = {};
