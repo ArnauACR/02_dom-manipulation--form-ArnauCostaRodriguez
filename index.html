@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="title-container">
+        <h1 class="title">NoteKeeper</h1>
+    </header>
+    <main class="main-container">
+    <section class="form-container card__container">
+        <h2>New Note Form</h2>
+        <form>
+            <label for="title">
+                Title
+                <input type="text" id="title" name="title" required aria-describedby="titleDescription"/>
+                <p id="titleDescription">This is the name</p>
+            </label>
+            <label for="content">
+                Content
+                <input type="text" id="content" name="content" required aria-describedby="contentDescription"/>
+                <p id="contentDescription">This is the content</p>
+            </label>
+            <label for="priority">
+                Priority
+                <select name="priority" id="priority" aria-describedby="priorityDescription">
+                    <option value="select" disabled selected>Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <p id="priorityDescription">This is the priority</p>
+                </select>
+            </label>
+            <label for="button">
+            <button type="submit" id="button-submit" aria-describedby="buttonDescription">Add Note</button>
+            <p id="buttonDescription">This is the button</p>
+            </label>
+        </form>
+    </section>
+    <section class="collect-notes">
+        <h2>Notes List</h2>
+    </section>
+</body>
+</html>

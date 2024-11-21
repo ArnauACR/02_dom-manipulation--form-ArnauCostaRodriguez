@@ -1,0 +1,140 @@
+    @import 'sanitize.css';
+
+    /* Variables globales */
+    :root {
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-l: 1.5rem;
+    --spacing-xl: 2rem;
+
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.5rem;
+    --border-md: 1rem;
+
+    --color-accent: #007bff;
+    --color-error: #ff5722;
+    --color-success: #4caf50;
+
+    --color-bg-light: #f5f5f5;
+    --color-text-light: #333333;
+    --color-form-bg-light: #ffffff;
+    --color-input-bg-light: #f0f0f0;
+    --color-input-border-light: #d1d5db;
+    --color-input-text-light: #333333;
+    --color-button-bg-light: #4caf50;
+    --color-button-hover-light: #3e8e41;
+    --color-button-text-light: #ffffff;
+    --color-card-bg-light: #ffffff;
+    --color-card-border-light: #e0e0e0;
+    --color-card-text-light: #333333;
+    --color-card-shadow-light: #e0e0e0;
+    --color-link-light: #007bff;
+
+    --color-bg-dark: #121212;
+    --color-text-dark: #e5e5e5;
+    --color-input-bg-dark: #2c2c2c;
+    --color-input-border-dark: #424242;
+    --color-input-text-dark: #e5e5e5;
+    --color-button-bg-dark: #4caf50;
+    --color-button-text-dark: #e5e5e5;
+    --color-card-bg-dark: #5e5e5e;
+    --color-card-border-dark: #333333;
+    --color-card-text-dark: #d3d3d3;
+    --color-card-shadow-dark: #000000;
+    --color-link-dark: #66bfff;
+    }
+
+    body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    }
+
+    .title-container {
+    padding: var(--spacing-md);
+    text-align: center;
+    }
+
+    .main-container {
+    padding: var(--spacing-md);
+    }
+
+    .form-container {
+    background-color: var(--color-form-bg-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 4px var(--color-card-shadow-light);
+    }
+
+    label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    }
+
+    input, select, button {
+    width: 100%;
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--color-input-border-light);
+    }
+
+    button {
+    background-color: var(--color-button-bg-light);
+    color: var(--color-button-text-light);
+    border: none;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: var(--color-button-hover-light);
+    }
+
+    .collect-notes {
+    margin-top: var(--spacing-md);
+    }
+
+    .collectNotes__item {
+    background-color: var(--color-card-bg-light);
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-card-border-light);
+    border-radius: var(--radius-xs);
+    margin-bottom: var(--spacing-sm);
+    box-shadow: 0 1px 3px var(--color-card-shadow-light);
+    }
+
+    @media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-bg-dark);
+        color: var(--color-text-dark);
+    }
+
+    .form-container {
+        background-color: var(--color-form-bg-dark);
+        box-shadow: 0 2px 4px var(--color-card-shadow-dark);
+    }
+
+    input, select, button {
+        background-color: var(--color-input-bg-dark);
+        border: 1px solid var(--color-input-border-dark);
+        color: var(--color-input-text-dark);
+    }
+
+    button {
+        background-color: var(--color-button-bg-dark);
+    }
+
+    button:hover {
+        background-color: var(--color-button-bg-dark);
+    }
+
+    .collect-notes__item {
+        background-color: var(--color-card-bg-dark);
+        border: 1px solid var(--color-card-border-dark);
+        color: var(--color-card-text-dark);
+        box-shadow: 0 1px 3px var(--color-card-shadow-dark);
+    }
+    }
+
+    
+    
