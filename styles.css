@@ -50,16 +50,16 @@
     color: var(--color-text-light);
     }
 
-    .title__container {
+    .title-container {
     padding: var(--spacing-md);
     text-align: center;
     }
 
-    .main__container {
+    .main-container {
     padding: var(--spacing-md);
     }
 
-    .form__container {
+    .form-container {
     background-color: var(--color-form-bg-light);
     padding: var(--spacing-md);
     border-radius: var(--radius-sm);
@@ -90,11 +90,11 @@
     background-color: var(--color-button-hover-light);
     }
 
-    .collectNotes {
+    .collect-notes {
     margin-top: var(--spacing-md);
     }
 
-    .collectNotes div {
+    .collectNotes__item {
     background-color: var(--color-card-bg-light);
     padding: var(--spacing-sm);
     border: 1px solid var(--color-card-border-light);
@@ -109,7 +109,7 @@
         color: var(--color-text-dark);
     }
 
-    .form__container {
+    .form-container {
         background-color: var(--color-form-bg-dark);
         box-shadow: 0 2px 4px var(--color-card-shadow-dark);
     }
@@ -128,7 +128,7 @@
         background-color: var(--color-button-bg-dark);
     }
 
-    .collectNotes div {
+    .collect-notes__item {
         background-color: var(--color-card-bg-dark);
         border: 1px solid var(--color-card-border-dark);
         color: var(--color-card-text-dark);

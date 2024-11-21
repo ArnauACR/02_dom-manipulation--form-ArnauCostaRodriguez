@@ -1,7 +1,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         
         const form = document.querySelector('form');
-        const displaySection = document.querySelector('.collectNotes');
+        const displaySection = document.querySelector('.collect-notes');
 
         form.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -12,11 +12,6 @@
         formData.forEach((value, key) => {
             sanitizedData[key] = sanitizeInput(value);
         });
-    
-        if (sanitizedData.priority === 'select') {
-            console.log('No priority');
-            return;
-        }
 
         const newNode = document.createElement('div');
         newNode.textContent = `Title: ${sanitizedData.title}, Content: ${sanitizedData.content}, Priority: ${sanitizedData.priority}`;
